@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin: 50px;
+}
+
+header{
+    text-align: center;
+}
+
+header > h1{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid;
+    padding: 20px 30px;
+    font-size: larger;
+    background-color: white;
+    box-shadow: inset 5px 5px 5px yellow,5px 5px 5px white;
+}
+
+article{
+    background-color: white;
+    border: 1px solid;
+    height: min-content;
+    padding: 20px;
+    box-shadow: inset 5px 5px 5px yellow,5px 5px 5px white;
+    text-decoration-line: none;
+}
+
+article a{
+    text-decoration-line: none;
+}
+
+@media (max-width: 1439px) {
+    main {
+      grid-template-columns: repeat(1, minmax(100%, 1fr));
+    }
+  }
